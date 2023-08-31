@@ -1,0 +1,78 @@
+/* Reset default margin, padding, and font-family for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background: #454545;
+    color: #fff;
+}
+
+/* Container for the editor layout */
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow the container to wrap on smaller screens */
+    justify-content: space-between; /* Add space between the left and right sections */
+}
+
+/* Styling for left and right sections */
+.left, .right {
+    flex-basis: calc(50% - 10px); /* Calculate to include padding between sections */
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin at the bottom of each section */
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styling for textareas */
+textarea {
+    width: 100%;
+    height: 30%; /* Adjust the height */
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    resize: none; /* Disable textarea resizing */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling for iframes */
+iframe {
+    width: 100%;
+    height: 70%; /* Adjust the height */
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* Styling for labels with icons */
+label i {
+    margin-right: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+
+/* Add hover effect to buttons */
+button:hover {
+    background-color: #2980b9;
+}
